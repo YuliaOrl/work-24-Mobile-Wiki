@@ -28,11 +28,11 @@ public class TestBase {
         }
     }
 
-        @BeforeEach
-        public void startDriver () {
-            addListener("AllureSelenide", new AllureSelenide());
-            open();
-        }
+    @BeforeEach
+    public void startDriver () {
+        addListener("AllureSelenide", new AllureSelenide());
+        open();
+    }
 
     @AfterEach
     public void afterEach() {
