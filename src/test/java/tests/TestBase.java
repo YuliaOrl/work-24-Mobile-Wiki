@@ -17,23 +17,20 @@ public class TestBase {
 
     @BeforeAll
     public static void setup() {
+        Configuration.browserSize = null;
 
         if (System.getProperty("deviceHost").equals("browserstack")) {
             Configuration.browser = BrowserstackMobileDriver.class.getName();
-            Configuration.browserSize = null;
         } else if (System.getProperty("deviceHost").equals("emulation")) {
             Configuration.browser = LocalMobileDriver.class.getName();
-            Configuration.browserSize = null;
         } else if (System.getProperty("deviceHost").equals("real")) {
             Configuration.browser = LocalMobileDriver.class.getName();
-            Configuration.browserSize = null;
         }
     }
 
         @BeforeEach
         public void startDriver () {
             addListener("AllureSelenide", new AllureSelenide());
-
             open();
         }
 
