@@ -6,7 +6,7 @@ public class AndroidWikipediaTests extends TestBase {
     Steps steps = new Steps();
 
     @Test
-    void mobileOnboardingScreenTest() {
+    void OnboardingScreenTest() {
 
         steps
              .checkContentScreen("The Free Encyclopedia\n" +
@@ -22,7 +22,7 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    void mobileCheckFootterTabbarTest() {
+    void CheckFootterTabbarTest() {
 
         steps
              .skipLanguage()
@@ -39,7 +39,7 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    void mobileCheckChapterOfArticleTest() {
+    void CheckChapterOfArticleTest() {
         String searchWord = "appium";
 
         steps
@@ -62,7 +62,7 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    void mobileSearchWordTest() {
+    void SearchWordTest() {
         String searchWord = "Selenide";
 
         steps
@@ -74,7 +74,7 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    void mobileSearchPhraseTest() {
+    void SearchPhraseTest() {
         String searchPhrase = "Mobile testing";
 
         steps
